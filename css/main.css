@@ -106,6 +106,10 @@ img{
 .head-bottom span{
     color: orange;
 }
+.head-bottom a{
+    text-decoration: none;
+    color: #fff;
+}
 .head-bottom h2{
     padding: 22px 0;
     font-size: 2.9rem;
@@ -153,63 +157,6 @@ img{
     }
 }
 
-/* side nav */
-.sidenav{
-    background: var(--dark);
-    color: #fff;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    right: -100%;
-    width: 300px;
-    padding: 20px;
-    transition: var(--transition);
-    z-index: 10;
-}
-
-/********/
-.sidenav.show{
-    right: 0;
-}
-/*************/
-.cancel-btn{
-    position: absolute;
-    right: 25px;
-    font-size: 22px;
-    cursor: pointer;
-    transition: var(--transition);
-}
-.cancel-btn:hover{
-    opacity: 0.7;
-}
-.navbar{
-    margin-top: 50px;
-    list-style: none;
-    padding: 12px;
-}
-.navbar li a{
-    color: #fff;
-    text-transform: capitalize;
-    text-decoration: none;
-    padding: 15px 0;
-    display: block;
-    border-bottom: 0.5px solid rgba(249, 211, 66, 0.3);
-    opacity: 0.8;
-    letter-spacing: 1.5px;
-    transition: var(--transition);
-}
-.navbar li a:hover{
-    padding-left: 12px;
-}
-.sign-up, .log-in{
-    background: var(--yellow);
-    color: #fff;
-}
-@media(max-width: 400px){
-    .sidenav{
-        width: 100vw;
-    }
-}
 
 /** title */
 .title{
@@ -229,7 +176,7 @@ img{
 
 
 
-/* service */
+/* About Us */
 
 .services{
     margin: 40px 0;
@@ -341,7 +288,12 @@ img{
     }
 }
 
-/* room */
+/* team building activities */
+
+.sec-team-width{
+    width: 90vw;
+    margin: 0 auto!important;
+}
 
 
 .rooms{
@@ -424,6 +376,17 @@ img{
 /* contact us */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.contact-container{
+    margin-top: 40px;
+    padding: 40px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/about-us-banner.jpg") center/cover no-repeat fixed;
+}
+
+.sec-contact-width{
+    width: 90vw;
+    margin: 0 auto!important;
+}
+
 
 .contact-us{
   width: 100%;
@@ -530,7 +493,7 @@ img{
 
 @media (max-width: 950px) {
   .contact-us{
-    width: 90%;
+    width: 100%;
     padding: 30px 40px 40px 35px ;
   }
   .contact-us .content .right-side{
@@ -560,13 +523,6 @@ img{
    width: 100%;
    margin-left: 0;
  }
-}
-
-
-.customers{
-    margin-top: 40px;
-    padding: 40px 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/about-us-banner.jpg") center/cover no-repeat fixed;
 }
 
 
@@ -635,4 +591,3 @@ img{
         align-items: center;
     }
 }
-
